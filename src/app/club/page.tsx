@@ -1,23 +1,16 @@
-import { redirect } from "next/navigation";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Club Náutico Posadas",
-  description: "Institución náutica y deportiva de la ciudad de Posadas, Misiones.",
-  openGraph: {
-    title: "Club Náutico Posadas",
-    description: "Institución náutica y deportiva de la ciudad de Posadas, Misiones.",
-    url: "https://nautico-posadas-web.vercel.app/club",
-    siteName: "Club Náutico Posadas",
-    images: [{ url: "https://nautico-posadas-web.vercel.app/og.jpg", width: 1200, height: 630 }],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    images: ["https://nautico-posadas-web.vercel.app/og.jpg"],
-  },
-};
+"use client";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function ClubPage() {
-  redirect("/");
+  const router = useRouter();
+  useEffect(() => { router.replace("/"); }, [router]);
+  return (
+    <div className="min-h-screen bg-[#1e2d5a] flex items-center justify-center">
+      <div className="text-white text-center">
+        <div className="w-8 h-8 border-2 border-white/30 border-t-white rounded-full animate-spin mx-auto mb-3" />
+        <p className="text-sm text-white/60">Cargando...</p>
+      </div>
+    </div>
+  );
 }
