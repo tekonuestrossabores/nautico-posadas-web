@@ -21,9 +21,8 @@ export function PublicNavbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <Image src="/logo.jpg" alt="Club Náutico Posadas" width={40} height={40} className="rounded-full" />
-          <span className="text-white font-semibold text-lg hidden sm:block leading-tight">
-            Club Náutico<br />
-            <span className="text-[#E87722] font-bold">Posadas</span>
+          <span className="text-white font-bold text-xl hidden sm:block tracking-wide">
+            CNP
           </span>
         </Link>
 
