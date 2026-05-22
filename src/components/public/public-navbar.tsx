@@ -51,7 +51,7 @@ export function PublicNavbar() {
             </Link>
           ))}
           <Link
-            href="https://nautico-posadas.vercel.app/login" target="_blank" rel="noreferrer"
+            href="https://nautico-posadas.vercel.app/login?solo=login" target="_blank" rel="noreferrer"
             className="ml-2 bg-[#E87722] hover:bg-[#d06810] text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
           >
             Acceso Socios
@@ -60,7 +60,7 @@ export function PublicNavbar() {
 
         {/* Mobile: Acceso Socios derecha */}
         <Link
-          href="https://nautico-posadas.vercel.app/login" target="_blank" rel="noreferrer"
+          href="https://nautico-posadas.vercel.app/login?solo=login" target="_blank" rel="noreferrer"
           className="md:hidden bg-[#E87722] hover:bg-[#d06810] text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors"
         >
           Socios
@@ -81,7 +81,7 @@ export function PublicNavbar() {
             </Link>
           ))}
           <Link
-            href="https://nautico-posadas.vercel.app/login" target="_blank" rel="noreferrer"
+            href="https://nautico-posadas.vercel.app/login?solo=login" target="_blank" rel="noreferrer"
             className="bg-[#E87722] hover:bg-[#d06810] text-white text-sm font-semibold px-4 py-2 rounded-lg text-center mt-1 transition-colors"
             onClick={() => setOpen(false)}
           >

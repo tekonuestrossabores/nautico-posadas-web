@@ -80,7 +80,7 @@ export default async function HomePage() {
               Ver Regatas
             </Link>
             <a
-              href="https://nautico-posadas.vercel.app/login"
+              href="https://nautico-posadas.vercel.app/login?solo=login"
               target="_blank"
               rel="noreferrer"
               className="bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-3 rounded-xl border border-white/20 transition-colors flex items-center justify-center gap-2"
@@ -215,7 +215,7 @@ export default async function HomePage() {
           <h2 className="text-3xl font-bold text-white mb-3">¿Ya sos socio?</h2>
           <p className="text-white/60 mb-8">Accedé a la plataforma del club para gestionar tu perfil, reservas y mucho más.</p>
           <a
-            href="https://nautico-posadas.vercel.app/login"
+            href="https://nautico-posadas.vercel.app/login?solo=login"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 bg-[#E87722] hover:bg-[#d06810] text-white font-bold px-10 py-3 rounded-xl transition-colors"
