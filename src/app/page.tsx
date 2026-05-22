@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { supabase } from "@/lib/supabase";
-import { Anchor, Trophy, Calendar, ChevronRight, Waves } from "lucide-react";
+import { Anchor, Trophy, Calendar, ChevronRight } from "lucide-react";
 
 const DEPORTES = [
   {
@@ -119,9 +119,13 @@ export default async function HomePage() {
             </Link>
           </div>
           <div className="relative">
-            <div className="aspect-[4/3] bg-gradient-to-br from-[#1e2d5a] to-[#2B3E9E] rounded-2xl flex items-center justify-center shadow-xl">
-              <Waves className="w-24 h-24 text-white/20" />
-              <p className="absolute text-white/40 text-sm">Foto del club</p>
+            <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl">
+              <Image
+                src="/club.jpg"
+                alt="Marina del Club Náutico Posadas"
+                fill
+                className="object-cover"
+              />
             </div>
             <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-2xl bg-[#E87722]/20 -z-10" />
             <div className="absolute -top-4 -left-4 w-16 h-16 rounded-2xl bg-[#2E8B3A]/20 -z-10" />
