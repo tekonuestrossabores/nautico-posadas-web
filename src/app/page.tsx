@@ -40,11 +40,16 @@ export default async function HomePage() {
     <>
       {/* HERO */}
       <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center bg-[#1e2d5a] overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1e2d5a] via-[#243570] to-[#1a2447]" />
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-[#E87722] blur-3xl" />
-          <div className="absolute bottom-20 right-10 w-80 h-80 rounded-full bg-[#2B3E9E] blur-3xl" />
-        </div>
+        {/* Foto de fondo */}
+        <Image
+          src="/hero.jpg"
+          alt="Club Náutico Posadas"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        {/* Overlay oscuro para legibilidad */}
+        <div className="absolute inset-0 bg-[#1e2d5a]/60" />
         <div className="absolute bottom-0 left-0 right-0">
           <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 40 Q360 0 720 40 Q1080 80 1440 40 L1440 80 L0 80 Z" fill="white" />

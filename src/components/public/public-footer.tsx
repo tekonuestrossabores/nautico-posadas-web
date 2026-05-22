@@ -64,11 +64,11 @@ export function PublicFooter() {
             </li>
             <li className="flex items-center gap-2">
               <Phone className="w-4 h-4 text-[#E87722] shrink-0" />
-              <span>+54 376 000-0000</span>
+              <a href="tel:+543765095610" className="hover:text-white transition-colors">+54 376 509-5610</a>
             </li>
             <li className="flex items-center gap-2">
               <Mail className="w-4 h-4 text-[#E87722] shrink-0" />
-              <span>info@clubnauticoposadas.com.ar</span>
+              <a href="mailto:clubnauticoposadas@gmail.com" className="hover:text-white transition-colors">clubnauticoposadas@gmail.com</a>
             </li>
           </ul>
         </div>
