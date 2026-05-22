@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 450" fill="none">
+  <!-- Orange arc (left crescent) -->
+  <path
+    d="M 95 320 A 155 155 0 0 1 95 80"
+    stroke="#E87722"
+    stroke-width="22"
+    stroke-linecap="round"
+    fill="none"
+  />
+
+  <!-- Green wave (bottom) -->
+  <path
+    d="M 60 355 Q 200 320 360 345"
+    stroke="#2E8B3A"
+    stroke-width="12"
+    stroke-linecap="round"
+    fill="none"
+  />
+
+  <!-- Blue sail left (wider) -->
+  <path
+    d="M 195 335 L 175 70 L 310 320 Z"
+    fill="#2B3E9E"
+  />
+
+  <!-- Blue sail right (narrow, tall) -->
+  <path
+    d="M 230 330 L 270 20 L 315 315 Z"
+    fill="#2B3E9E"
+  />
+
+  <!-- White gap between sails -->
+  <path
+    d="M 210 330 L 245 90 L 260 95 L 232 330 Z"
+    fill="white"
+  />
+
+  <!-- Text: Club Náutico -->
+  <text
+    x="200"
+    y="395"
+    text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-style="italic"
+    font-size="38"
+    fill="#2B2B2B"
+  >Club Náutico</text>
+
+  <!-- Text: Posadas -->
+  <text
+    x="200"
+    y="438"
+    text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-style="italic"
+    font-size="38"
+    fill="#2B2B2B"
+  >Posadas</text>
+</svg>
