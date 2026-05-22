@@ -14,14 +14,14 @@ export const metadata: Metadata = {
     description: "Institución náutica y deportiva de la ciudad de Posadas, Misiones.",
     url: "https://nautico-posadas-web.vercel.app",
     siteName: "Club Náutico Posadas",
-    images: [{ url: "https://nautico-posadas-web.vercel.app/opengraph-image.png", width: 1200, height: 630 }],
+    images: [{ url: "https://nautico-posadas-web.vercel.app/og.png", width: 1200, height: 630 }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Club Náutico Posadas",
     description: "Institución náutica y deportiva de la ciudad de Posadas, Misiones.",
-    images: ["https://nautico-posadas-web.vercel.app/opengraph-image.png"],
+    images: ["https://nautico-posadas-web.vercel.app/og.png"],
   },
 };
 
