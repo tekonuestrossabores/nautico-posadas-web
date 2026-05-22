@@ -18,12 +18,25 @@ export function PublicNavbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#1e2d5a]/95 backdrop-blur-sm shadow-lg">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-3">
+
+        {/* Mobile: hamburger izquierda + CNP derecha */}
+        <button
+          className="md:hidden text-white p-1"
+          onClick={() => setOpen(!open)}
+          aria-label="Menú"
+        >
+          {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+        </button>
+
+        {/* Logo (solo desktop) */}
+        <Link href="/" className="hidden md:flex items-center gap-3">
           <Image src="/logo.jpg" alt="Club Náutico Posadas" width={40} height={40} className="rounded-full" />
-          <span className="text-white font-bold text-xl hidden sm:block tracking-wide">
-            CNP
-          </span>
+          <span className="text-white font-bold text-xl tracking-wide">CNP</span>
+        </Link>
+
+        {/* Mobile: CNP centrado */}
+        <Link href="/" className="md:hidden text-white font-bold text-xl tracking-wide absolute left-1/2 -translate-x-1/2">
+          CNP
         </Link>
 
         {/* Desktop nav */}
@@ -45,17 +58,16 @@ export function PublicNavbar() {
           </Link>
         </nav>
 
-        {/* Mobile hamburger */}
-        <button
-          className="md:hidden text-white p-1"
-          onClick={() => setOpen(!open)}
-          aria-label="Menú"
+        {/* Mobile: Acceso Socios derecha */}
+        <Link
+          href="https://nautico-posadas.vercel.app/login" target="_blank" rel="noreferrer"
+          className="md:hidden bg-[#E87722] hover:bg-[#d06810] text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors"
         >
-          {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
+          Socios
+        </Link>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile menu desplegable */}
       {open && (
         <div className="md:hidden bg-[#1e2d5a] border-t border-white/10 px-4 py-4 flex flex-col gap-3">
           {links.map((l) => (
