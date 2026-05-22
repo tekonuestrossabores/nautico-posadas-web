@@ -9,7 +9,20 @@ const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 export const metadata: Metadata = {
   title: "Club Náutico Posadas",
   description: "Institución náutica y deportiva de la ciudad de Posadas, Misiones.",
-  icons: { icon: "/logo.jpg", apple: "/logo.jpg" },
+  openGraph: {
+    title: "Club Náutico Posadas",
+    description: "Institución náutica y deportiva de la ciudad de Posadas, Misiones.",
+    url: "https://nautico-posadas-web.vercel.app",
+    siteName: "Club Náutico Posadas",
+    images: [{ url: "/opengraph-image.png", width: 1200, height: 630 }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Club Náutico Posadas",
+    description: "Institución náutica y deportiva de la ciudad de Posadas, Misiones.",
+    images: ["/opengraph-image.png"],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
