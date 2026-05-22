@@ -209,6 +209,35 @@ export default async function HomePage() {
         )}
       </section>
 
+      {/* CLIMA Y VIENTO */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="text-center mb-10">
+            <span className="text-[#E87722] font-semibold text-sm uppercase tracking-widest">
+              Condiciones náuticas
+            </span>
+            <h2 className="text-3xl font-bold text-[#1e2d5a] mt-2">
+              Clima y viento en Posadas
+            </h2>
+            <p className="text-gray-500 text-sm mt-2">
+              Pronóstico en tiempo real para el río Paraná
+            </p>
+          </div>
+          <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+            <iframe
+              src="https://embed.windy.com/embed2.html?lat=-27.367&lon=-55.896&detailLat=-27.367&detailLon=-55.896&width=650&height=500&zoom=9&level=surface&overlay=wind&product=ecmwf&menu=&message=true&marker=true&calendar=now&pressure=&type=map&location=coordinates&detail=true&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1"
+              width="100%"
+              height="500"
+              style={{ border: "none", display: "block" }}
+              title="Viento y clima Posadas - Windy"
+            />
+          </div>
+          <p className="text-center text-xs text-gray-400 mt-3">
+            Datos provistos por <a href="https://windy.com" target="_blank" rel="noreferrer" className="hover:text-gray-600 underline">Windy.com</a>
+          </p>
+        </div>
+      </section>
+
       {/* CTA SOCIOS */}
       <section className="bg-[#1e2d5a] py-16 px-4">
         <div className="max-w-3xl mx-auto text-center">
