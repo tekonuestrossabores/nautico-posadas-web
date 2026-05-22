@@ -17,7 +17,7 @@ export function PublicNavbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#1e2d5a]/95 backdrop-blur-sm shadow-lg">
-      <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <div className="w-full px-8 h-16 flex items-center justify-between">
 
         {/* Mobile: hamburger izquierda + CNP derecha */}
         <button
@@ -40,12 +40,12 @@ export function PublicNavbar() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden md:flex items-center gap-10">
           {links.map((l) => (
             <Link
               key={l.href}
               href={l.href}
-              className="text-white/80 hover:text-white text-sm font-medium transition-colors"
+              className="text-white/80 hover:text-white text-sm font-medium tracking-wide transition-colors"
             >
               {l.label}
             </Link>
