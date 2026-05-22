@@ -225,7 +225,7 @@ export default async function HomePage() {
           </div>
           <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100">
             <iframe
-              src="https://embed.windy.com/embed2.html?lat=-27.367&lon=-55.896&detailLat=-27.367&detailLon=-55.896&width=650&height=500&zoom=9&level=surface&overlay=wind&product=ecmwf&menu=&message=true&marker=true&calendar=now&pressure=&type=map&location=coordinates&detail=true&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1"
+              src="https://embed.windy.com/embed2.html?lat=-27.373&lon=-55.907&detailLat=-27.372&detailLon=-55.901&width=650&height=500&zoom=13&level=surface&overlay=wind&product=ecmwf&menu=&message=true&marker=true&calendar=now&pressure=&type=map&location=coordinates&detail=true&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1"
               width="100%"
               height="500"
               style={{ border: "none", display: "block" }}
